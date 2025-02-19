@@ -1,3 +1,5 @@
+import configparser
+import os
 from world import world
 
 def hello() -> str:
@@ -10,3 +12,7 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+    cfg = configparser.ConfigParser()
+    cfg.read('config.ini')
+    print(os.environ['CONDA_PYTHON_EXE'])
+    print(cfg.get('System', 'conda_location', vars=os.environ))
