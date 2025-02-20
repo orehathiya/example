@@ -1,4 +1,4 @@
-import hello
+from example.hello import hello
 
 def test_hello():
-    assert hello.hello() == 'Hello, world!'
+    assert hello() == 'Hello, world!'

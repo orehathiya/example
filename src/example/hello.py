@@ -1,6 +1,6 @@
 import configparser
 import os
-from world import world
+from example.world import world
 
 def hello() -> str:
     return 'Hello, world!'

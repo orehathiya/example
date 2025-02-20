@@ -1,4 +1,4 @@
-from world import world
+from example.world import world
 
 def test_world():
     assert world() == 'world'
