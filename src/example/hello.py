@@ -9,6 +9,12 @@ def main() -> None:
     print("Hello from example!")
     print("world() returns: ", world())
 
+class Example:
+    def __init__(self):
+        print("Example class created!")
+
+    def example_method(self):
+        return "Example method called!"
 
 if __name__ == "__main__":
     main()
