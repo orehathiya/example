@@ -4,7 +4,6 @@ on: [push, pull_request]
 
 jobs:
   ruff-check:
-    name: python
     runs-on: ubuntu-latest
 
     steps:
@@ -22,7 +21,6 @@ jobs:
           uv run ruff check
 
   ruff-format-check:
-    name: python
     runs-on: ubuntu-latest
 
     steps:
@@ -40,7 +38,6 @@ jobs:
           uv run ruff format --check
 
   mypy-check:
-    name: python
     runs-on: ubuntu-latest
 
     steps:
