@@ -1,12 +1,14 @@
+from pytest_mock import MockerFixture
+
 from example.hello import Example, hello
 
 
-def test_hello(mocker):
+def test_hello(mocker: MockerFixture) -> None:
     mocker.patch("test_hello.hello", return_value="hello function mocked!")
     assert hello() == "hello function mocked!"
 
 
-def test_example(mocker):
+def test_example(mocker: MockerFixture) -> None:
     mocker.patch.object(
         Example, "example_method", return_value="example method mocked!"
     )

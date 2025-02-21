@@ -14,10 +14,10 @@ def main() -> None:
 
 
 class Example:
-    def __init__(self):
+    def __init__(self) -> None:
         print("Example class created!")
 
-    def example_method(self):
+    def example_method(self) -> str:
         return "Example method called!"
 
 
