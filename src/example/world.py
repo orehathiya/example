@@ -1,2 +1,2 @@
 def world() -> str:
-    return 'world'
+    return "world"
