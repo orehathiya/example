@@ -26,3 +26,4 @@ extend-select = ["I"]
 
 [tool.mypy]
 disallow_untyped_defs = true
+mypy_path = ["./src", "./tests"]
