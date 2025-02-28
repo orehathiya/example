@@ -14,3 +14,6 @@ def add(a: int, b: int) -> int:
         The sum of the two integers.
     """
     return a + b
+
+def minus(a: int, b: int) -> int:
+    return a - b
