@@ -58,7 +58,7 @@ def contains(tree: Tree, value: int) -> bool:
             return x == value or contains(left, value) or contains(right, value)
 
 
-tree = Branch(1, Branch(2, None, None), Branch(3, None, Branch(4, None, None)))
+tree: Tree = Branch(1, Branch(2, None, None), Branch(3, None, Branch(4, None, None)))
 
 if __name__ == "__main__":
     print_shape(Point(1, 2))
