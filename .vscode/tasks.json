@@ -12,6 +12,37 @@
 			"problemMatcher": [
 				"$python"
 			]
+		},
+		{
+			"type": "shell",
+			"label": "Lint (ruff)",
+			"command": "ruff",
+			"args": [
+				"check",
+			],
+			"group": "build",
+			"problemMatcher": []
+		},
+        {
+			"type": "shell",
+			"label": "Format Check (ruff)",
+			"command": "ruff",
+			"args": [
+				"format",
+                "--check",
+			],
+			"group": "build",
+			"problemMatcher": []
+		},
+		{
+			"type": "shell",
+			"label": "Type Check (mypy)",
+			"command": "mypy",
+			"args": [
+				".",
+			],
+			"group": "build",
+			"problemMatcher": []
 		}
 	]
 }
