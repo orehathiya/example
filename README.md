@@ -1,1 +1,1 @@
-modern python sample project
+modern python sample project.
