@@ -4,9 +4,11 @@
 		{
 			"type": "shell",
 			"label": "Run Tests",
-			"command": "pytest",
+			"command": "uv",
 			"args": [
-				"tests"
+				"run",
+                "pytest",
+                "tests"
 			],
 			"group": "test",
 			"problemMatcher": [
@@ -16,8 +18,10 @@
 		{
 			"type": "shell",
 			"label": "Lint (ruff)",
-			"command": "ruff",
+			"command": "uv",
 			"args": [
+                "run",
+                "ruff",
 				"check",
 			],
 			"group": "build",
@@ -26,8 +30,10 @@
         {
 			"type": "shell",
 			"label": "Format Check (ruff)",
-			"command": "ruff",
+			"command": "uv",
 			"args": [
+				"run",
+                "ruff",
 				"format",
                 "--check",
 			],
@@ -37,8 +43,10 @@
 		{
 			"type": "shell",
 			"label": "Type Check (mypy)",
-			"command": "mypy",
+			"command": "uv",
 			"args": [
+				"run",
+				"mypy",
 				".",
 			],
 			"group": "build",
